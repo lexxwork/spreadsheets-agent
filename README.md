@@ -1,4 +1,4 @@
-# datalake-spreadsheets
+# spreadsheets-agent
 
 Google Sheets automation via an MCP server. The project exposes small, composable tools for reading and updating spreadsheets through the Google Sheets API.
 

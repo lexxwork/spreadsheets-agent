@@ -95,14 +95,14 @@ This revision log is local to this MCP server. It does not include manual edits 
 ### Run a script directly
 
 ```bash
-node scenarios/mark-loaded.js '{"dbNames":["vk_2021"],"nicknames":["Starman"]}' database-main
+node scenarios/<script>.js '<json-args>' <config-name>
 ```
 
 ### Via an MCP client
 
 Describe the task in natural language and let the client call the tools. Example:
 
-> In `database-main`, find all rows where column `R` is empty and column `A` is not empty, then write the domain without TLD into `R`.
+> Read rows from a configured spreadsheet, filter them by a condition, and write the result back to a target column.
 
 ## Adding a new spreadsheet
 

@@ -1,0 +1,11 @@
+# Node
+node_modules/
+
+credentials.json
+configs/*
+!configs
+!configs/.git-keep
+.sheet-revisions/
+.serena
+.bwrap
+etc

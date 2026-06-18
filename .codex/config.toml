@@ -1,0 +1,4 @@
+[mcp_servers.datalake-sheets]
+command = "node"
+args = ["src/mcp-server.js"]
+cwd = "."

@@ -1,4 +1,4 @@
-[mcp_servers.datalake-sheets]
+[mcp_servers.spreadsheets-agent]
 command = "node"
 args = ["src/mcp-server.js"]
 cwd = "."

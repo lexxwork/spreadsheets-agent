@@ -127,7 +127,7 @@ This repository already includes `.mcp.json` for MCP-aware clients that read pro
 ```json
 {
   "mcpServers": {
-    "datalake-sheets": {
+    "spreadsheets-agent": {
       "type": "stdio",
       "command": "node",
       "args": ["src/mcp-server.js"]

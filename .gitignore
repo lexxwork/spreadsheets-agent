@@ -5,6 +5,7 @@ credentials.json
 configs/*
 !configs
 !configs/.git-keep
+!configs/write-test.json.example
 .sheet-revisions/
 .serena
 .bwrap

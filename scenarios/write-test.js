@@ -5,7 +5,7 @@ const { loadConfig } = require('../src/config');
 const CONFIG = 'write-test';
 const config = loadConfig(CONFIG);
 
-const now = new Date().toLocaleString('uk-UA');
+const now = new Date().toLocaleString();
 
 async function run() {
   // Write headers and a test row.

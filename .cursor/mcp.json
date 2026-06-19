@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "spreadsheets-agent": {
+      "command": "node",
+      "args": ["src/mcp-server.js"]
+    }
+  }
+}

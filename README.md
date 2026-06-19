@@ -107,14 +107,14 @@ Describe the task in natural language and let the client call the tools. Example
 ## Adding a new spreadsheet
 
 1. Create `configs/my-table.json` with at least `spreadsheetId` and `sheetName`.
-2. Share the spreadsheet with the service account from your `credentials.json`.
+2. Open `credentials.json`, copy `client_email`, and add it to the spreadsheet editors in Google Sheets.
 3. Use `my-table` as the `config` parameter in MCP tools.
 
 ## Setup
 
 ```bash
 npm install
-# credentials.json must be present (Google service account key)
+# credentials.json must be present
 node test-credentials.js
 ```
 

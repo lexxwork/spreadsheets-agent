@@ -4,7 +4,7 @@
 
 - Node.js
 - npm
-- a Google service-account key for Sheets API access
+- Google `credentials.json` for Sheets API access
 
 ## Install
 
@@ -14,13 +14,15 @@ npm install
 
 ## Add Credentials
 
-Place the service-account JSON key at:
+Place the Google credentials file at:
 
 ```text
 credentials.json
 ```
 
 This file is intentionally gitignored.
+
+Take `client_email` from this file and add it to the spreadsheet editors in Google Sheets. Without that, scripts and MCP tools will not be able to write to the sheet.
 
 ## Verify Authentication
 
@@ -57,7 +59,7 @@ The third command assumes you created a working `configs/write-test.json` with a
 - `credentials.json not found`
   Create the file in the project root.
 - `No access to spreadsheet`
-  Share the spreadsheet with the service-account email shown by `scripts/test-credentials.js`.
+  Open `credentials.json`, copy `client_email`, and add it to the spreadsheet editors in Google Sheets.
 - `Config "<name>" not found`
   Add `configs/<name>.json`.
 - MCP tools start but reads fail

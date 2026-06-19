@@ -18,7 +18,7 @@ async function main() {
 
   const creds = JSON.parse(fs.readFileSync(CREDS_FILE, 'utf8'));
   console.log(`✅ credentials.json loaded`);
-  console.log(`   Service account: ${creds.client_email}`);
+  console.log(`   client_email: ${creds.client_email}`);
 
   const auth = new GoogleAuth({
     keyFile: CREDS_FILE,
@@ -47,8 +47,8 @@ async function main() {
   } catch (err) {
     if (err.status === 403 || err.status === 404) {
       console.error(`❌ No access to spreadsheet.`);
-      console.error(`   Grant access to the service account: ${creds.client_email}`);
-      console.error(`   File → Share → Add member`);
+      console.error(`   Open credentials.json and copy client_email: ${creds.client_email}`);
+      console.error(`   Add this email to the spreadsheet editors in Google Sheets.`);
     } else {
       console.error(`❌ Error: ${err.message}`);
     }
